@@ -9,7 +9,7 @@
           <el-input v-model.trim="form.password"></el-input>
         </el-form-item>
         <el-form-item>
-          <el-button type="primary" @click="onSubmit">登录</el-button>
+          <el-button type="primary" @click="hClick">登录</el-button>
         </el-form-item>
       </el-form>
     </div>
@@ -28,10 +28,12 @@ export default {
       }
     }
   },
-  methods: {},
+  methods: {
+    hClick(val) {
+      console.log('点击了登录', val)
+    }
+  },
   mounted() {},
-
-  methods: {}
 }
 </script>
 
